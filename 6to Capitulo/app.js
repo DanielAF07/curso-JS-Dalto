@@ -15,6 +15,8 @@ class Llave {
 
 const selectedKey = (modelo, precio) => {
     let data = document.querySelector("#selected-key")
+    let button = document.querySelector("#send-button")
+    button.removeAttribute("disabled")
     data.setAttribute("value", modelo)
     console.log(`El usuario quiere comprar la llave modelo ${modelo} a un precio de ${precio}`)
 }
